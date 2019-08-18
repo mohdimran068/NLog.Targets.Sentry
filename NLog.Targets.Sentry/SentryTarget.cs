@@ -114,7 +114,7 @@ namespace NLog.Targets
         /// Internal constructor, used for unit-testing
         /// </summary>
         /// <param name="ravenClient">A <see cref="IRavenClient"/></param>
-        internal SentryTarget(IRavenClient ravenClient)
+        public SentryTarget(IRavenClient ravenClient)
         {
             this.client = new Lazy<IRavenClient>(() => ravenClient);
         }
